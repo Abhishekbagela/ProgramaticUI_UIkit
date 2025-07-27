@@ -40,9 +40,8 @@ class FirstScreen: UIViewController {
     }
     
     @objc func sentToNextScreen() {
-        let secondScreen = SecondScreen()
-        secondScreen.title = "Second Screen"
-        navigationController?.pushViewController(secondScreen, animated: true)
+        let videoListVC = VideoListVC()
+        navigationController?.pushViewController(videoListVC, animated: true)
     }
     
 }
