@@ -14,7 +14,7 @@ class FirstScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "First Screen"
+        title = "ProgramaticUI_UIkit"
         navigationController?.navigationBar.prefersLargeTitles = true
         
         setupButton()
@@ -25,7 +25,7 @@ class FirstScreen: UIViewController {
         
         nextButton.configuration = .filled()
         nextButton.configuration?.baseBackgroundColor = .systemPink
-        nextButton.configuration?.title = "Next"
+        nextButton.configuration?.title = "Table View"
         nextButton.translatesAutoresizingMaskIntoConstraints = false
 
         nextButton.addTarget(self, action: #selector(sentToNextScreen), for: .touchUpInside)
